@@ -29,6 +29,7 @@ public class MainActivity extends Activity {
 
 			ImageView icon = new ImageView(context);
 			icon.setImageResource(R.drawable.ic_launcher);
+			icon.setPadding(10, 10, 10, 10);
 			int iconSize = getRawPixels(48f);
 			LayoutParams iconParams = LinearLayoutParams();
 			iconParams.width = iconSize;
