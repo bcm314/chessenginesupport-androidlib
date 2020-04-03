@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<enginelist>
+
+    <engine
+        name="Rodent IV V0.26-debug"
+        filename="librodent4.so"
+        target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+
+</enginelist>
