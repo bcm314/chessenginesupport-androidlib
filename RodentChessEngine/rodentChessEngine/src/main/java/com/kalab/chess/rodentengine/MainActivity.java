@@ -21,6 +21,15 @@ import android.text.style.StyleSpan;
 import android.text.style.RelativeSizeSpan;
 import android.text.style.ForegroundColorSpan;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import android.content.res.AssetManager;
+import android.util.Log;
+// import android.widget.Toast;
+
 public class MainActivity extends Activity {
 
 	private class HeaderView extends LinearLayout {
@@ -88,6 +97,8 @@ public class MainActivity extends Activity {
 		layout.addView(label, labelParams);
 
 		setContentView(layout);
+
+		copyFileOrDir("Rodent4");
 	}
 
 	String getVersionName() {
@@ -162,5 +173,52 @@ public class MainActivity extends Activity {
 
 	private LinearLayout.LayoutParams LinearLayoutParams() {
 		return new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+	}
+
+	private void copyFileOrDir(String path) {
+		AssetManager assetManager = this.getAssets();
+		String assets[] = null;
+		try {
+			assets = assetManager.list(path);
+			if (assets.length == 0) {
+				copyFile(path);
+			} else {
+				String fullPath = "/sdcard/" + path;
+				File dir = new File(fullPath);
+				if (!dir.exists())
+					dir.mkdir();
+				for (int i = 0; i < assets.length; ++i) {
+					copyFileOrDir(path + "/" + assets[i]);
+				}
+			}
+		} catch (IOException ex) {
+			Log.e("tag", "I/O Exception", ex);
+		}
+	}
+
+	private void copyFile(String filename) {
+		AssetManager assetManager = this.getAssets();
+
+		InputStream in = null;
+		OutputStream out = null;
+		try {
+			in = assetManager.open(filename);
+			String newFileName = "/sdcard/" + filename;
+			// Toast.makeText(getApplicationContext(),"write " + newFileName, Toast.LENGTH_SHORT).show();
+			out = new FileOutputStream(newFileName);
+
+			byte[] buffer = new byte[1024];
+			int read;
+			while ((read = in.read(buffer)) != -1) {
+				out.write(buffer, 0, read);
+			}
+			in.close();
+			in = null;
+			out.flush();
+			out.close();
+			out = null;
+		} catch (Exception e) {
+			Log.e("tag", e.getMessage());
+		}
 	}
 }
