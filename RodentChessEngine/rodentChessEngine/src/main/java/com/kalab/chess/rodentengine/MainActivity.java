@@ -28,7 +28,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import android.content.res.AssetManager;
 import android.util.Log;
-// import android.widget.Toast;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -97,8 +97,6 @@ public class MainActivity extends Activity {
 		layout.addView(label, labelParams);
 
 		setContentView(layout);
-
-		copyFileOrDir("Rodent4");
 	}
 
 	String getVersionName() {
@@ -139,6 +137,18 @@ public class MainActivity extends Activity {
 		}, downloadLinkStart, b.length(), 0);
 
 		b.append(").");
+
+		b.append("\n\n");
+		downloadLinkStart = b.length();
+		b.append("copy book and personality files to /sdcard/Rodent4");
+		b.setSpan(new ClickableSpan() {
+			@Override
+			public void onClick(View widget) {
+				copyFileOrDir("Rodent4");
+			}
+		}, downloadLinkStart, b.length(), 0);
+		b.append("\n");
+		b.append("You must MANUALLY grant WRITE_EXTERNAL_STORAGE before!!!");
 
 		return b;
 	}
@@ -204,7 +214,7 @@ public class MainActivity extends Activity {
 		try {
 			in = assetManager.open(filename);
 			String newFileName = "/sdcard/" + filename;
-			// Toast.makeText(getApplicationContext(),"write " + newFileName, Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(),"write " + newFileName, Toast.LENGTH_SHORT).show();
 			out = new FileOutputStream(newFileName);
 
 			byte[] buffer = new byte[1024];
