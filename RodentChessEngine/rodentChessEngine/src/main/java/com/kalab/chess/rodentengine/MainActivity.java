@@ -29,8 +29,19 @@ import java.io.OutputStream;
 import android.content.res.AssetManager;
 import android.util.Log;
 import android.widget.Toast;
+import android.widget.Button;
+
+import android.Manifest;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
+
 
 public class MainActivity extends Activity {
+
+	private static final int MY_PERMISSIONS_REQUEST_READ_CONTACTS = 1;
+	private boolean copyErrorB;
+	private String copyPath = "";
+	private Button but1;
 
 	private class HeaderView extends LinearLayout {
 		public HeaderView(Context context) {
@@ -96,7 +107,22 @@ public class MainActivity extends Activity {
 		labelParams.topMargin = spacing;
 		layout.addView(label, labelParams);
 
+		but1 = new Button(this);
+		but1.setText("copy book and personality files to /sdcard/Rodent4");
+		but1.setPadding(20, 20, 20, 20);
+		LinearLayout.LayoutParams but1Params = LinearLayoutParams();
+		but1Params.width = ViewGroup.LayoutParams.MATCH_PARENT;
+		but1Params.weight = 0f;
+		// but1Params.setMargins(10, 30, 10, 10);
+		but1.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View view) {
+				copyFileOrDir("Rodent4");
+			}});
+		layout.addView(but1, but1Params);
+
 		setContentView(layout);
+
+		copyFileOrDir("Rodent4/personalities");
 	}
 
 	String getVersionName() {
@@ -138,18 +164,6 @@ public class MainActivity extends Activity {
 
 		b.append(").");
 
-		b.append("\n\n");
-		downloadLinkStart = b.length();
-		b.append("copy book and personality files to /sdcard/Rodent4");
-		b.setSpan(new ClickableSpan() {
-			@Override
-			public void onClick(View widget) {
-				copyFileOrDir("Rodent4");
-			}
-		}, downloadLinkStart, b.length(), 0);
-		b.append("\n");
-		b.append("You must MANUALLY grant WRITE_EXTERNAL_STORAGE before!!!");
-
 		return b;
 	}
 
@@ -186,6 +200,15 @@ public class MainActivity extends Activity {
 	}
 
 	private void copyFileOrDir(String path) {
+
+		if (!HavePermission()) {
+			RequestPermission();
+			// this sub must be called again after got permission
+			copyPath = path;
+			return;
+		}
+
+		copyErrorB = false;
 		AssetManager assetManager = this.getAssets();
 		String assets[] = null;
 		try {
@@ -198,7 +221,13 @@ public class MainActivity extends Activity {
 				if (!dir.exists())
 					dir.mkdir();
 				for (int i = 0; i < assets.length; ++i) {
-					copyFileOrDir(path + "/" + assets[i]);
+					String fileorDirName = path + "/" + assets[i];
+					copyFileOrDir(fileorDirName);
+					if (copyErrorB) {
+						Toast.makeText(getApplicationContext(),"Error writing " + fileorDirName,
+							Toast.LENGTH_LONG).show();
+						return; // stop after the first write-error
+					}
 				}
 			}
 		} catch (IOException ex) {
@@ -206,7 +235,7 @@ public class MainActivity extends Activity {
 		}
 	}
 
-	private void copyFile(String filename) {
+	private void copyFile(String filename) throws IOException {
 		AssetManager assetManager = this.getAssets();
 
 		InputStream in = null;
@@ -214,7 +243,6 @@ public class MainActivity extends Activity {
 		try {
 			in = assetManager.open(filename);
 			String newFileName = "/sdcard/" + filename;
-			Toast.makeText(getApplicationContext(),"write " + newFileName, Toast.LENGTH_SHORT).show();
 			out = new FileOutputStream(newFileName);
 
 			byte[] buffer = new byte[1024];
@@ -227,8 +255,48 @@ public class MainActivity extends Activity {
 			out.flush();
 			out.close();
 			out = null;
+			if (newFileName.substring(newFileName.length()-4).equals(".bin"))
+				Toast.makeText(getApplicationContext(),"Written " + newFileName, Toast.LENGTH_SHORT).show();
 		} catch (Exception e) {
 			Log.e("tag", e.getMessage());
+			copyErrorB = true;
+			throw e;
+		}
+	}
+
+	private boolean HavePermission() {
+		return (ContextCompat.checkSelfPermission (getApplicationContext(), Manifest.permission.READ_EXTERNAL_STORAGE)
+				== PackageManager.PERMISSION_GRANTED &&
+			ContextCompat.checkSelfPermission (getApplicationContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE)
+				== PackageManager.PERMISSION_GRANTED);
+	}
+
+	private void RequestPermission() {
+
+		// Check whether permission to Read and Write to External Storage is grated or not..
+		if (!HavePermission()) {
+			// request permission at runtime.
+			ActivityCompat.requestPermissions (MainActivity.this,
+				new String[] {Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE},
+				MY_PERMISSIONS_REQUEST_READ_CONTACTS);
+		}
+	}
+
+	@Override
+	public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+		switch (requestCode) {
+			case MY_PERMISSIONS_REQUEST_READ_CONTACTS: {
+				// If request is cancelled, the result arrays are empty.
+				if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+					// Toast.makeText(getApplicationContext(),"permission was granted", Toast.LENGTH_LONG).show();
+					if (!copyPath.equals(""))
+						copyFileOrDir(copyPath);
+				} else {
+					// Toast.makeText(getApplicationContext(),"permission denied,", Toast.LENGTH_LONG).show();
+					but1.setVisibility(View.GONE);
+				}
+				return;
+			}
 		}
 	}
 }
