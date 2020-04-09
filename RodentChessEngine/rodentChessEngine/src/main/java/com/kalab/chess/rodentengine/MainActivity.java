@@ -40,6 +40,7 @@ public class MainActivity extends Activity {
 
 	private static final int MY_PERMISSIONS_REQUEST_READ_CONTACTS = 1;
 	private boolean copyErrorB;
+	private boolean skipExistingB = true;
 	private String copyPath = "";
 	private Button but1;
 
@@ -116,6 +117,7 @@ public class MainActivity extends Activity {
 		// but1Params.setMargins(10, 30, 10, 10);
 		but1.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View view) {
+				skipExistingB = false;
 				copyFileOrDir("Rodent4");
 			}});
 		layout.addView(but1, but1Params);
@@ -238,11 +240,18 @@ public class MainActivity extends Activity {
 	private void copyFile(String filename) throws IOException {
 		AssetManager assetManager = this.getAssets();
 
+		String newFileName = "/sdcard/" + filename;
+
+		File file = new File(newFileName);
+		if(file.exists() && skipExistingB) {
+			// Toast.makeText(getApplicationContext(),"Already exist " + newFileName, Toast.LENGTH_SHORT).show();
+			return;
+		}
+
 		InputStream in = null;
 		OutputStream out = null;
 		try {
 			in = assetManager.open(filename);
-			String newFileName = "/sdcard/" + filename;
 			out = new FileOutputStream(newFileName);
 
 			byte[] buffer = new byte[1024];
