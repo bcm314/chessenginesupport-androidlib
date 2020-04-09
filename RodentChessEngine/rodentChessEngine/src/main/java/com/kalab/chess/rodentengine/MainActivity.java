@@ -166,6 +166,11 @@ public class MainActivity extends Activity {
 
 		b.append(").");
 
+		b.append("\n\n");
+		b.append("There are also the following engines included\n");
+		appendDetail(b, "OpenTal", "V1.1");
+		b.append("\n\n");
+
 		return b;
 	}
 
