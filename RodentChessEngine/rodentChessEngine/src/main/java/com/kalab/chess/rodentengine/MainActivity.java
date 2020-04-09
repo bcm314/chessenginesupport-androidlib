@@ -166,9 +166,10 @@ public class MainActivity extends Activity {
 
 		b.append(").");
 
-		b.append("\n\n");
-		b.append("There are also the following engines included\n");
+		b.append("\n\n\nThere are also the following engines included\n\n");
 		appendDetail(b, "OpenTal", "V1.1");
+		b.append("\n\n");
+		appendDetail(b, "Stockfish", "090420 BCM");
 		b.append("\n\n");
 
 		return b;
