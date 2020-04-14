@@ -12,7 +12,17 @@
         target="armeabi-v7a|arm64-v8a|x86|x86_64" />
 
     <engine
-        name="Stockfish 090420 BCM"
+        name="Gambit Fruit 2.2 beta 4bx"
+        filename="libgfruit.so"
+        target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+
+    <engine
+        name="Toga II 4.01"
+        filename="libtogaii.so"
+        target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+
+    <engine
+        name="Stockfish 20200409"
         filename="libstockfish.so"
         target="armeabi-v7a|arm64-v8a|x86|x86_64" />
 
