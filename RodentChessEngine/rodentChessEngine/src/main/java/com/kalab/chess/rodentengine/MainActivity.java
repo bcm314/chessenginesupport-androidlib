@@ -109,7 +109,7 @@ public class MainActivity extends Activity {
 		layout.addView(label, labelParams);
 
 		but1 = new Button(this);
-		but1.setText("copy book and personality files to /sdcard/Rodent4");
+		but1.setText(R.string.copy_rodent_files);
 		but1.setPadding(20, 20, 20, 20);
 		LinearLayout.LayoutParams but1Params = LinearLayoutParams();
 		but1Params.width = ViewGroup.LayoutParams.MATCH_PARENT;
@@ -139,47 +139,23 @@ public class MainActivity extends Activity {
 	private CharSequence getLabel()  {
 		SpannableStringBuilder b = new SpannableStringBuilder();
 
-		b.append(getText(R.string.includes_the_following_engines));
-		b.append("\n\n");
-
-		appendDetail(b, "Chess Engine Version", getVersionName());
-		b.append("\n\n");
-
 		b.append(getText(R.string.to_use_them));
 		b.append("\n\n");
 
-		b.append(getText(R.string.app_name));
-		b.append(" ");
-		b.append(getText(R.string.released_under));
-
-		b.append(" (");
-
-		int downloadLinkStart = b.length();
-
-		b.append("source code");
-		b.setSpan(new ClickableSpan() {
-			@Override
-			public void onClick(View widget) {
-				launchUri(getText(R.string.source_code));
-			}
-		}, downloadLinkStart, b.length(), 0);
-
-		b.append(").");
-
-		b.append("\n\n\nThere are also the following engines included\n\n");
-		appendDetail(b, "OpenTal", "V1.1");
+		b.append(getText(R.string.includes_the_following_engines));
 		b.append("\n\n");
-		appendDetail(b, "Gambit Fruit", "2.2 beta 4bx");
-		b.append("\n\n");
-		appendDetail(b, "Toga II", "4.01");
-		b.append("\n\n");
-		appendDetail(b, "Stockfish", "20200409");
-		b.append("\n\n");
+
+		appendDetail(b, "Rodent IV", getVersionName(), "https://github.com/nescitus/rodent-iv");
+		appendDetail(b, "OpenTal", "V1.1", "http://www.pkoziol.cal24.pl/opental/");
+		appendDetail(b, "Toga II", "4.01", "http://www.mediafire.com/file/xeukohvobjobbv4/TogaII401.zip");
+		appendDetail(b, "Gambit Fruit", "2.2 beta 4bx", "https://github.com/lazydroid/gambit-fruit");
+		appendDetail(b, "Laser", "1.8 beta", "https://github.com/jeffreyan11/laser-chess-engine");
+		appendDetail(b, "Stockfish", "20200409", "https://github.com/official-stockfish");
 
 		return b;
 	}
 
-	private void appendDetail(SpannableStringBuilder b, String title, String subtitle) {
+	private void appendDetail(SpannableStringBuilder b, String title, String subtitle, final String url) {
 		b.append("    ");
 
 		int nameStart = b.length();
@@ -193,6 +169,26 @@ public class MainActivity extends Activity {
 
 		b.setSpan(new RelativeSizeSpan(0.8f), subtitleStart, b.length(), 0);
 		b.setSpan(new ForegroundColorSpan(0xff808080), subtitleStart, b.length(), 0);
+
+		if (!url.equals("")) {
+			b.append("\n    ");
+
+			b.append("(");
+
+			int downloadLinkStart = b.length();
+
+			b.append("source code");
+			b.setSpan(new ClickableSpan() {
+				@Override
+				public void onClick(View widget) {
+					launchUri(url);
+				}
+			}, downloadLinkStart, b.length(), 0);
+
+			b.append(")");
+			b.append("\n");
+		}
+		b.append("\n\n");
 	}
 
 	void launchUri(CharSequence uri) {
