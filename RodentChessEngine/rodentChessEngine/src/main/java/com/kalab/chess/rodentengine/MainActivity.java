@@ -145,11 +145,12 @@ public class MainActivity extends Activity {
 		b.append(getText(R.string.includes_the_following_engines));
 		b.append("\n\n");
 
-		appendDetail(b, "Rodent IV", getVersionName(), "https://github.com/nescitus/rodent-iv");
-		appendDetail(b, "OpenTal", "V1.1", "http://www.pkoziol.cal24.pl/opental/");
+		appendDetail(b, "Rodent IV", "0.26-debug", "https://github.com/nescitus/rodent-iv");
+		appendDetail(b, "OpenTal", "1.1", "http://www.pkoziol.cal24.pl/opental/");
 		appendDetail(b, "Toga II", "4.01", "http://www.mediafire.com/file/xeukohvobjobbv4/TogaII401.zip");
 		appendDetail(b, "Gambit Fruit", "2.2 beta 4bx", "https://github.com/lazydroid/gambit-fruit");
 		appendDetail(b, "Laser", "1.8 beta", "https://github.com/jeffreyan11/laser-chess-engine");
+		appendDetail(b, "Andscacs", "0.921", "https://github.com/MichaelB7/Andscacs");
 		appendDetail(b, "Stockfish", "20200409", "https://github.com/official-stockfish");
 
 		return b;
@@ -160,23 +161,30 @@ public class MainActivity extends Activity {
 
 		int nameStart = b.length();
 		b.append(title);
+		b.setSpan(new RelativeSizeSpan(1.2f), nameStart, b.length(), 0);
 		b.setSpan(new StyleSpan(Typeface.BOLD), nameStart, b.length(), 0);
+		b.setSpan(new ClickableSpan() {
+			@Override
+			public void onClick(View widget) {
+				launchUri(url);
+			}
+		}, nameStart, b.length(), 0);
 
 		b.append("\n    ");
 
 		int subtitleStart = b.length();
 		b.append(subtitle);
 
-		b.setSpan(new RelativeSizeSpan(0.8f), subtitleStart, b.length(), 0);
-		b.setSpan(new ForegroundColorSpan(0xff808080), subtitleStart, b.length(), 0);
+//		b.setSpan(new RelativeSizeSpan(0.8f), subtitleStart, b.length(), 0);
+//		b.setSpan(new ForegroundColorSpan(0xff808080), subtitleStart, b.length(), 0);
 
+/*
 		if (!url.equals("")) {
 			b.append("\n    ");
 
 			b.append("(");
 
 			int downloadLinkStart = b.length();
-
 			b.append("source code");
 			b.setSpan(new ClickableSpan() {
 				@Override
@@ -188,6 +196,7 @@ public class MainActivity extends Activity {
 			b.append(")");
 			b.append("\n");
 		}
+*/
 		b.append("\n\n");
 	}
 
