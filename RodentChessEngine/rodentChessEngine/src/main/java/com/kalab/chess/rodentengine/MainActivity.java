@@ -151,6 +151,7 @@ public class MainActivity extends Activity {
 		appendDetail(b, "Gambit Fruit", "2.2 beta 4bx", "https://github.com/lazydroid/gambit-fruit");
 		appendDetail(b, "Laser", "1.8 beta", "https://github.com/jeffreyan11/laser-chess-engine");
 		appendDetail(b, "Andscacs", "0.921", "https://github.com/MichaelB7/Andscacs");
+		appendDetail(b, "CT800", "1.40", "https://www.ct800.net/");
 		appendDetail(b, "Stockfish", "20200409", "https://github.com/official-stockfish");
 
 		return b;
@@ -170,7 +171,7 @@ public class MainActivity extends Activity {
 			}
 		}, nameStart, b.length(), 0);
 
-		b.append("\n    ");
+		b.append(" ");
 
 		int subtitleStart = b.length();
 		b.append(subtitle);
