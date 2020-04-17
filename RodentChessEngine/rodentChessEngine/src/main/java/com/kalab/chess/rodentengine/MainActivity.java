@@ -146,12 +146,13 @@ public class MainActivity extends Activity {
 		b.append("\n\n");
 
 		appendDetail(b, "Rodent IV", "0.26-debug", "https://github.com/nescitus/rodent-iv");
-		appendDetail(b, "OpenTal", "1.1", "http://www.pkoziol.cal24.pl/opental/");
+		appendDetail(b, "OpenTal", "1.1", "http://www.pkoziol.cal24.pl/opental");
 		appendDetail(b, "Toga II", "4.01", "http://www.mediafire.com/file/xeukohvobjobbv4/TogaII401.zip");
 		appendDetail(b, "Gambit Fruit", "2.2 beta 4bx", "https://github.com/lazydroid/gambit-fruit");
 		appendDetail(b, "Laser", "1.8 beta", "https://github.com/jeffreyan11/laser-chess-engine");
 		appendDetail(b, "Andscacs", "0.921", "https://github.com/MichaelB7/Andscacs");
-		appendDetail(b, "CT800", "1.40", "https://www.ct800.net/");
+		appendDetail(b, "CT800", "1.40", "https://www.ct800.net");
+		appendDetail(b, "Ethereal", "12.08", "https://github.com/AndyGrant/Ethereal");
 		appendDetail(b, "Stockfish", "20200409", "https://github.com/official-stockfish");
 
 		return b;
@@ -198,7 +199,7 @@ public class MainActivity extends Activity {
 			b.append("\n");
 		}
 */
-		b.append("\n\n");
+		b.append("\n");
 	}
 
 	void launchUri(CharSequence uri) {
