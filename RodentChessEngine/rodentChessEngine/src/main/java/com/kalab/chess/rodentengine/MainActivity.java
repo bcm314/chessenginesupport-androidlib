@@ -153,6 +153,8 @@ public class MainActivity extends Activity {
 		appendDetail(b, "Andscacs", "0.921", "https://github.com/MichaelB7/Andscacs");
 		appendDetail(b, "CT800", "1.40", "https://www.ct800.net");
 		appendDetail(b, "Ethereal", "12.08", "https://github.com/AndyGrant/Ethereal");
+		appendDetail(b, "Senpai", "2.0", "https://github.com/MichaelB7/Senpai");
+		appendDetail(b, "SugaR XPrO", "20200420", "https://github.com/MichaelB7/SugaR");
 		appendDetail(b, "Stockfish", "20200409", "https://github.com/official-stockfish");
 
 		return b;
