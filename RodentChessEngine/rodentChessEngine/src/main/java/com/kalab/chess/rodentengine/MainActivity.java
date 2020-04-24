@@ -156,6 +156,10 @@ public class MainActivity extends Activity {
 		appendDetail(b, "Senpai", "2.0", "https://github.com/MichaelB7/Senpai");
 		appendDetail(b, "SugaR XPrO", "20200420", "https://github.com/MichaelB7/SugaR");
 		appendDetail(b, "Stockfish", "20200409", "https://github.com/official-stockfish");
+		appendDetail(b, "Demolito", "20200424", "https://github.com/lucasart/Demolito");
+		appendDetail(b, "Kōhai", "1.0", "https://github.com/MichaelB7/Kohai-Chess");
+		appendDetail(b, "RubiChess", "1.8", "https://github.com/Matthies/RubiChess");
+		appendDetail(b, "Sungorus", "1.4", "https://sites.google.com/site/sungorus");
 
 		return b;
 	}

@@ -57,6 +57,26 @@
         target="armeabi-v7a|arm64-v8a|x86|x86_64" />
 
     <engine
+        name="Demolito 20200424"
+        filename="libdemolito.so"
+        target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+
+    <engine
+        name="Kōhai 1.0"
+        filename="libkohai.so"
+        target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+
+    <engine
+        name="RubiChess 1.8"
+        filename="librubichess.so"
+        target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+
+    <engine
+        name="Sungorus 1.4"
+        filename="libsungorus.so"
+        target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+
+    <engine
         name="Stockfish 20200409"
         filename="libstockfish.so"
         target="armeabi-v7a|arm64-v8a|x86|x86_64" />
