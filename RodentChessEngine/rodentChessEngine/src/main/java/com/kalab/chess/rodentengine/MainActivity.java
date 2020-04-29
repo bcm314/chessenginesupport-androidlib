@@ -160,6 +160,7 @@ public class MainActivity extends Activity {
 		appendDetail(b, "Kōhai", "1.0", "https://github.com/MichaelB7/Kohai-Chess");
 		appendDetail(b, "RubiChess", "1.8", "https://github.com/Matthies/RubiChess");
 		appendDetail(b, "Sungorus", "1.4", "https://sites.google.com/site/sungorus");
+		appendDetail(b, "Nayeem", "10.1", "https://github.com/MohamedNayeem/Nayeem");
 
 		return b;
 	}
