@@ -145,7 +145,7 @@ public class MainActivity extends Activity {
 		b.append(getText(R.string.includes_the_following_engines));
 		b.append("\n\n");
 
-		appendDetail(b, "Rodent IV", "0.26-debug", "https://github.com/nescitus/rodent-iv");
+		appendDetail(b, "Rodent IV", "0.26", "https://github.com/nescitus/rodent-iv");
 		appendDetail(b, "OpenTal", "1.1", "http://www.pkoziol.cal24.pl/opental");
 		appendDetail(b, "Toga II", "4.01", "http://www.mediafire.com/file/xeukohvobjobbv4/TogaII401.zip");
 		appendDetail(b, "Gambit Fruit", "2.2 beta 4bx", "https://github.com/lazydroid/gambit-fruit");
