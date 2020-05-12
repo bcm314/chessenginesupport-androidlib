@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <enginelist>
 
+<!-- ================================================================================
+		Builds of open source engines done by me
+     ================================================================================ -->
+
     <engine
         name="Rodent IV 0.26"
         filename="librodent4.so"
@@ -90,5 +94,74 @@
         name="Texel 1.08a17"
         filename="libtexel.so"
         target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+
+
+<!-- ================================================================================
+		Other builds
+		(not checked redistribution permissions - so no binary here)
+     ================================================================================ -->
+
+    <engine
+        name="Aristides 20171222"
+        filename="libaristides.so"
+        target="armeabi-v7a|arm64-v8a" />
+    <engine
+        name="BrainFish 20180423"
+        filename="libbrainfish.so"
+        target="armeabi-v7a|arm64-v8a" />
+    <engine
+        name="Cfish 20180418"
+        filename="libcfish.so"
+        target="armeabi-v7a|arm64-v8a" />
+    <engine
+        name="CiChess 20171107"
+        filename="libcichess.so"
+        target="armeabi-v7a|arm64-v8a" />
+    <engine
+        name="Corchess 20180425"
+        filename="libcorchess.so"
+        target="armeabi-v7a|arm64-v8a" />
+    <engine
+        name="McBrain 20180210"
+        filename="libmcbrain.so"
+        target="armeabi-v7a|arm64-v8a" />
+    <engine
+        name="BikJump 2.5"
+        filename="libbikjump25.so"
+        target="armeabi-v7a|arm64-v8a" />
+    <engine
+        name="Komodo 10"
+        filename="libkomodo10.so"
+        target="armeabi-v7a|arm64-v8a" />
+
+    <engine
+        name="Arasan 20170209"
+        filename="libarasan.so"
+        target="armeabi-v7a" />
+    <engine
+        name="Gnu Chess 20161029"
+        filename="libgnuchess.so"
+        target="armeabi-v7a" />
+    <engine
+        name="Greko 20161231"
+        filename="libgreko.so"
+        target="armeabi-v7a" />
+    <engine
+        name="RodentIIrisky 20170205"
+        filename="librodentiirisky.so"
+        target="armeabi-v7a" />
+
+    <engine
+        name="asmFish 20181204"
+        filename="libasmfish.so"
+        target="arm64-v8a" />
+    <engine
+        name="Hakkapeliitta 3.0"
+        filename="libhakkapeliitta.so"
+        target="arm64-v8a" />
+
+<!-- ================================================================================
+		Other builds - end
+     ================================================================================ -->
 
 </enginelist>
