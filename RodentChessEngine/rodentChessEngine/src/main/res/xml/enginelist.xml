@@ -130,9 +130,15 @@
         filename="libbikjump25.so"
         target="armeabi-v7a|arm64-v8a" />
     <engine
+        name="Komodo 9"
+        filename="libkomodo9.so"
+        target="armeabi-v7a|arm64-v8a" />
+<!--
+    <engine
         name="Komodo 10"
         filename="libkomodo10.so"
         target="armeabi-v7a|arm64-v8a" />
+-->
 
     <engine
         name="Arasan 20170209"
