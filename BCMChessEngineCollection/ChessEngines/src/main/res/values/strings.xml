@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BCM Chess Engine Collection</string>
+    <string name="includes_the_following_engines">This package provides the following open source engines.</string>
+    <string name="to_use_them">To use any of the following engines, you need a chess application compatible with the Open Exchange protocol.</string>
+    <string name="copy_rodent_files">copy book and personality files to /sdcard/Rodent4</string>
+</resources>

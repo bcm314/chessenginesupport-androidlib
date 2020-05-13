@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="de.BCM.chess.rodentengine"
+    package="de.BCM.chess.EngineCollection"
     android:versionCode="1"
     android:versionName="0.26">
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<!--    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name="de.BCM.chess.rodentengine.MainActivity"
+            android:name="de.BCM.chess.EngineCollection.MainActivity"
             android:label="@string/app_name"
             android:windowSoftInputMode="stateUnchanged|adjustPan">
             <intent-filter>
@@ -23,12 +23,12 @@
 
             <meta-data
                 android:name="chess.provider.engine.authority"
-                android:value="de.BCM.chess.rodentengine.RodentEngineProvider" />
+                android:value="de.BCM.chess.EngineCollection.BCMEngineProvider" />
         </activity>
 
         <provider
-            android:name="de.BCM.chess.rodentengine.RodentEngineProvider"
-            android:authorities="de.BCM.chess.rodentengine.RodentEngineProvider"
+            android:name="de.BCM.chess.EngineCollection.BCMEngineProvider"
+            android:authorities="de.BCM.chess.EngineCollection.BCMEngineProvider"
             android:exported="true" />
     </application>
 

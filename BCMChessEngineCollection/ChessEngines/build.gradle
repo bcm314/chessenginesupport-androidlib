@@ -5,7 +5,7 @@ android {
     buildToolsVersion "28.0.3"
 
     defaultConfig {
-        applicationId "de.BCM.chess.rodentengine"
+        applicationId "de.BCM.chess.EngineCollection"
         minSdkVersion 14
         targetSdkVersion 28
     }
