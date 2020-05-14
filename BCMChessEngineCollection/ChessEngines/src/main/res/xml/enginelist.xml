@@ -85,6 +85,11 @@
         filename="libtexel.so"
         target="armeabi-v7a|arm64-v8a|x86|x86_64" />
 
+    <engine
+        name="Sting 11.2"
+        filename="libsting.so"
+        target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+
 
 <!-- ================================================================================
 		Other builds

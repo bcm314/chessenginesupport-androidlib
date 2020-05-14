@@ -145,6 +145,7 @@ public class MainActivity extends Activity {
 		appendDetail(b, "Sungorus", "1.4", "https://sites.google.com/site/sungorus");
 		appendDetail(b, "Nayeem", "10.1", "https://github.com/MohamedNayeem/Nayeem");
 		appendDetail(b, "Texel", "1.08a17", "https://github.com/peterosterlund2/texel");
+		appendDetail(b, "Sting", "11.2", "http://www.talkchess.com/forum3/download/file.php?id=170");
 
 		return b;
 	}
