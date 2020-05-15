@@ -129,23 +129,55 @@ public class MainActivity extends Activity {
 		b.append(getText(R.string.includes_the_following_engines));
 		b.append("\n\n");
 
-		appendDetail(b, "OpenTal", "1.1", "http://www.pkoziol.cal24.pl/opental");
-		appendDetail(b, "Toga II", "4.01", "http://www.mediafire.com/file/xeukohvobjobbv4/TogaII401.zip");
-		appendDetail(b, "Gambit Fruit", "2.2 beta 4bx", "https://github.com/lazydroid/gambit-fruit");
-		appendDetail(b, "Laser", "1.8 beta", "https://github.com/jeffreyan11/laser-chess-engine");
 		appendDetail(b, "Andscacs", "0.921", "https://github.com/MichaelB7/Andscacs");
+		appendDetail(b, "Cheng", "4.40", "https://github.com/kmar/cheng4");
 		appendDetail(b, "CT800", "1.40", "https://www.ct800.net");
-		appendDetail(b, "Ethereal", "12.08", "https://github.com/AndyGrant/Ethereal");
-		appendDetail(b, "Senpai", "2.0", "https://github.com/MichaelB7/Senpai");
-		appendDetail(b, "SugaR XPrO", "20200420", "https://github.com/MichaelB7/SugaR");
-		appendDetail(b, "Stockfish", "20200409", "https://github.com/official-stockfish");
 		appendDetail(b, "Demolito", "20200424", "https://github.com/lucasart/Demolito");
+		appendDetail(b, "Ethereal", "12.08", "https://github.com/AndyGrant/Ethereal");
+		appendDetail(b, "Gambit Fruit", "2.2 beta 4bx", "https://github.com/lazydroid/gambit-fruit");
 		appendDetail(b, "Kōhai", "1.0", "https://github.com/MichaelB7/Kohai-Chess");
-		appendDetail(b, "RubiChess", "1.8", "https://github.com/Matthies/RubiChess");
-		appendDetail(b, "Sungorus", "1.4", "https://sites.google.com/site/sungorus");
+		appendDetail(b, "Laser", "1.8 beta", "https://github.com/jeffreyan11/laser-chess-engine");
 		appendDetail(b, "Nayeem", "10.1", "https://github.com/MohamedNayeem/Nayeem");
-		appendDetail(b, "Texel", "1.08a17", "https://github.com/peterosterlund2/texel");
+		appendDetail(b, "OpenTal", "1.1", "http://www.pkoziol.cal24.pl/opental");
+		appendDetail(b, "RubiChess", "1.8", "https://github.com/Matthies/RubiChess");
+		appendDetail(b, "Senpai", "2.0", "https://github.com/MichaelB7/Senpai");
 		appendDetail(b, "Sting", "11.2", "http://www.talkchess.com/forum3/download/file.php?id=170");
+		appendDetail(b, "Stockfish", "20200409", "https://github.com/official-stockfish");
+		appendDetail(b, "SugaR XPrO", "20200420", "https://github.com/MichaelB7/SugaR");
+		appendDetail(b, "Sungorus", "1.4", "https://sites.google.com/site/sungorus");
+		appendDetail(b, "Texel", "1.08a17", "https://github.com/peterosterlund2/texel");
+		appendDetail(b, "Toga II", "4.01", "http://www.mediafire.com/file/xeukohvobjobbv4/TogaII401.zip");
+
+		b.append("\nAdditional engines built by others:\n");
+		b.append("You have to include it yourself, because I didn't checked redistribution permissions!\n\n");
+		appendDetail(b, "DanaSah", "7.9", "https://github.com/pmcastro/danasah790");
+		appendDetail(b, "Aristides", "20171222", "https://play.google.com/store/apps/details?id=app.packs.chessenginesotherfish64pack");
+		appendDetail(b, "BrainFish", "20180423", "https://play.google.com/store/apps/details?id=app.packs.chessenginesotherfish64pack");
+		appendDetail(b, "Cfish", "20180418", "https://play.google.com/store/apps/details?id=app.packs.chessenginesotherfish64pack");
+		appendDetail(b, "CiChess", "20171107", "https://play.google.com/store/apps/details?id=app.packs.chessenginesotherfish64pack");
+		appendDetail(b, "Corchess", "20180425", "https://play.google.com/store/apps/details?id=app.packs.chessenginesotherfish64pack");
+		appendDetail(b, "McBrain", "20180210", "https://play.google.com/store/apps/details?id=app.packs.chessenginesotherfish64pack");
+		appendDetail(b, "BikJump", "2.5", "https://play.google.com/store/apps/details?id=com.eng.engines");
+		appendDetail(b, "Komodo", "9", "https://play.google.com/store/apps/details?id=com.komodochess.komodo9");
+		appendDetail(b, "Cheese", "2.1", "https://chessengines.blogspot.com/p/download.html");
+		appendDetail(b, "Bluefish-NN", "200320", "https://chessengines.blogspot.com/p/download.html");
+		appendDetail(b, "Godel", "7.0", "https://chessengines.blogspot.com/p/download.html");
+		appendDetail(b, "GoldOno", "7.0", "https://chessengines.blogspot.com/p/download.html");
+		appendDetail(b, "HekaSF", "0.95", "https://chessengines.blogspot.com/p/download.html");
+		appendDetail(b, "Honey", "X5i", "https://chessengines.blogspot.com/p/download.html");
+		appendDetail(b, "Igel", "2.3.1", "https://chessengines.blogspot.com/p/download.html");
+		appendDetail(b, "MoonFish", "270220", "https://chessengines.blogspot.com/p/download.html");
+		appendDetail(b, "Pedone", "2.0", "https://chessengines.blogspot.com/p/download.html");
+		appendDetail(b, "Sapeli", "1.75", "https://chessengines.blogspot.com/p/download.html");
+		appendDetail(b, "ShashChess", "8.0", "https://chessengines.blogspot.com/p/download.html");
+		appendDetail(b, "Gogobello", "2.2", "http://sasachess.altervista.org/gogobello/index.html");
+		appendDetail(b, "Gull", "3", "http://chesstroid.blogspot.com/2017/04/android-uci-engine-update-gull-3ap-with.html");
+		appendDetail(b, "asmFish", "20181204", "https://play.google.com/store/apps/details?id=com.acidapestudios.chessenginescollection");
+		appendDetail(b, "Hakkapeliitta", "3.0", "https://play.google.com/store/apps/details?id=com.acidapestudios.chessenginescollection");
+		appendDetail(b, "Arasan 20170209", "(32bit only)", "https://play.google.com/store/apps/details?id=app.packs.activechessenginespack");
+		appendDetail(b, "Gnu Chess", "20161029 (32bit only)", "https://play.google.com/store/apps/details?id=app.packs.activechessenginespack");
+		appendDetail(b, "Greko", "20161231 (32bit only)", "https://play.google.com/store/apps/details?id=app.packs.activechessenginespack");
+		appendDetail(b, "Rodent II risky", "20170205 (32bit only)", "https://play.google.com/store/apps/details?id=app.packs.activechessenginespack");
 
 		return b;
 	}
@@ -155,15 +187,16 @@ public class MainActivity extends Activity {
 
 		int nameStart = b.length();
 		b.append(title);
-		b.setSpan(new RelativeSizeSpan(1.2f), nameStart, b.length(), 0);
-		b.setSpan(new StyleSpan(Typeface.BOLD), nameStart, b.length(), 0);
-		b.setSpan(new ClickableSpan() {
-			@Override
-			public void onClick(View widget) {
-				launchUri(url);
-			}
-		}, nameStart, b.length(), 0);
-
+		if (!url.equals("")) {
+			b.setSpan(new RelativeSizeSpan(1.2f), nameStart, b.length(), 0);
+			b.setSpan(new StyleSpan(Typeface.BOLD), nameStart, b.length(), 0);
+			b.setSpan(new ClickableSpan() {
+				@Override
+				public void onClick(View widget) {
+					launchUri(url);
+				}
+			}, nameStart, b.length(), 0);
+		}
 		b.append(" ");
 
 		int subtitleStart = b.length();
