@@ -52,7 +52,6 @@
     <engine name="Igel 2.3.1"					filename="libigel.so"			target="armeabi-v7a|arm64-v8a" />
     <engine name="MoonFish 270220"				filename="libmoonfish.so"		target="armeabi-v7a|arm64-v8a" />
     <engine name="Pedone 2.0"					filename="libpedone.so"			target="armeabi-v7a|arm64-v8a" />
-    <engine name="Sapeli 1.75"					filename="libsapeli.so"			target="armeabi-v7a|arm64-v8a" />
     <engine name="ShashChess 8.0"				filename="libshashchess.so"		target="armeabi-v7a|arm64-v8a" />
     <engine name="Gogobello 2.2"				filename="libgogobello.so"		target="armeabi-v7a|arm64-v8a" />
     <engine name="Gull 3"						filename="libgull3.so"			target="armeabi-v7a|arm64-v8a" />

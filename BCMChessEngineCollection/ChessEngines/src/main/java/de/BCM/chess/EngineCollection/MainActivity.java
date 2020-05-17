@@ -168,7 +168,6 @@ public class MainActivity extends Activity {
 		appendDetail(b, "Igel", "2.3.1", "https://chessengines.blogspot.com/p/download.html");
 		appendDetail(b, "MoonFish", "270220", "https://chessengines.blogspot.com/p/download.html");
 		appendDetail(b, "Pedone", "2.0", "https://chessengines.blogspot.com/p/download.html");
-		appendDetail(b, "Sapeli", "1.75", "https://chessengines.blogspot.com/p/download.html");
 		appendDetail(b, "ShashChess", "8.0", "https://chessengines.blogspot.com/p/download.html");
 		appendDetail(b, "Gogobello", "2.2", "http://sasachess.altervista.org/gogobello/index.html");
 		appendDetail(b, "Gull", "3", "http://chesstroid.blogspot.com/2017/04/android-uci-engine-update-gull-3ap-with.html");
