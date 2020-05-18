@@ -7,6 +7,7 @@
 
     <engine name="Andscacs 0.921"				filename="libandscacs.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Cheng 4.40"					filename="libcheng.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+    <engine name="Cinnamon 2.2a"				filename="libcinnamon.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="CT800 1.40"					filename="libct800.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Demolito 20200424"			filename="libdemolito.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Ethereal 12.08"				filename="libethereal.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />

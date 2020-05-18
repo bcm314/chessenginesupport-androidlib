@@ -131,7 +131,8 @@ public class MainActivity extends Activity {
 
 		appendDetail(b, "Andscacs", "0.921", "https://github.com/MichaelB7/Andscacs");
 		appendDetail(b, "Cheng", "4.40", "https://github.com/kmar/cheng4");
-		appendDetail(b, "CT800", "1.40", "https://www.ct800.net");
+		appendDetail(b, "Cheng", "4.40", "https://github.com/kmar/cheng4");
+		appendDetail(b, "Cinnamon", "2.2a", "https://github.com/gekomad/Cinnamon");
 		appendDetail(b, "Demolito", "20200424", "https://github.com/lucasart/Demolito");
 		appendDetail(b, "Ethereal", "12.08", "https://github.com/AndyGrant/Ethereal");
 		appendDetail(b, "Gambit Fruit", "2.2 beta 4bx", "https://github.com/lazydroid/gambit-fruit");
