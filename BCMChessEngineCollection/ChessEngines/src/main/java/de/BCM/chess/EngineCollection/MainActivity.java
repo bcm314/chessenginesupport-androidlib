@@ -143,7 +143,7 @@ public class MainActivity extends Activity {
 		appendDetail(b, "RubiChess", "1.8", "https://github.com/Matthies/RubiChess");
 		appendDetail(b, "Senpai", "2.0", "https://github.com/MichaelB7/Senpai");
 		appendDetail(b, "Sting", "11.2", "http://www.talkchess.com/forum3/download/file.php?id=170");
-		appendDetail(b, "Stockfish", "20200409", "https://github.com/official-stockfish");
+		appendDetail(b, "Stockfish", "20200821", "https://github.com/official-stockfish");
 		appendDetail(b, "Stockfish NNUE", "20200821", "https://github.com/joergoster/Stockfish-NNUE");
 		appendDetail(b, "SugaR XPrO", "20200420", "https://github.com/MichaelB7/SugaR");
 		appendDetail(b, "Sungorus", "1.4", "https://sites.google.com/site/sungorus");
