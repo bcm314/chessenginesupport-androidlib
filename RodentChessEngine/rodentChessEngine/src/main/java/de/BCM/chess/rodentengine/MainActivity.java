@@ -145,9 +145,9 @@ public class MainActivity extends Activity {
 		b.append(getText(R.string.includes_the_following_engines));
 		b.append("\n\n");
 
-		appendDetail(b, "Rodent IV", "0.28", "https://github.com/nescitus/rodent-iv");
-		appendDetail(b, "Rodent IV debug", "0.28", "https://github.com/nescitus/rodent-iv");
-		appendDetail(b, "Rodent IV debug old no SMP build", "0.28", "https://github.com/nescitus/rodent-iv");
+		appendDetail(b, "Rodent IV", "0.29", "https://github.com/nescitus/rodent-iv");
+		appendDetail(b, "Rodent IV debug", "0.29", "https://github.com/nescitus/rodent-iv");
+		appendDetail(b, "Rodent IV debug old no SMP build", "0.29", "https://github.com/nescitus/rodent-iv");
 
 		return b;
 	}
