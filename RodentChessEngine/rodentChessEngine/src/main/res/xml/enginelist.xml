@@ -2,18 +2,22 @@
 <enginelist>
 
     <engine
-        name="Rodent IV 0.29"
+        name="Rodent IV 0.30"
         filename="librodent4.so"
         target="armeabi-v7a|arm64-v8a|x86|x86_64" />
 
+<!--
     <engine
-        name="Rodent IV 0.29-debug"
+        name="Rodent IV 0.30-debug"
         filename="librodent4debug.so"
         target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+-->
 
+<!--
     <engine
-        name="Rodent IV 0.29-debug old no SMP build"
+        name="Rodent IV 0.30-debug old no SMP build"
         filename="librodent4old.so"
         target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+-->
 
 </enginelist>

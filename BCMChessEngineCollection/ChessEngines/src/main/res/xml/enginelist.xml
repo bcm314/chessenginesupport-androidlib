@@ -9,7 +9,7 @@
     <engine name="Cheng 4.40"					filename="libcheng.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Cinnamon 2.2a"				filename="libcinnamon.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="CT800 1.40"					filename="libct800.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
-    <engine name="Demolito 20200424"			filename="libdemolito.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+    <engine name="Demolito 20200908"			filename="libdemolito.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Ethereal 12.08"				filename="libethereal.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Gambit Fruit 2.2 beta 4bx"	filename="libgfruit.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Kōhai 1.0"					filename="libkohai.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
@@ -19,9 +19,9 @@
     <engine name="RubiChess 1.8"				filename="librubichess.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Senpai 2.0"					filename="libsenpai.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Sting 11.2"					filename="libsting.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
-    <engine name="Stockfish 20200821"			filename="libstockfish.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
-    <engine name="Stockfish NNUE 20200821"		filename="libstockfishNNUE.so"	target="armeabi-v7a|arm64-v8a|x86|x86_64" />
-    <engine name="SugaR XPrO 20200420"			filename="libsugar.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+    <engine name="Stockfish 20200908"			filename="libstockfish.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+    <engine name="Stockfish NNUE 20200908"		filename="libstockfishNNUE.so"	target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+    <engine name="SugaR XPrO 20200908"			filename="libsugar.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Sungorus 1.4"					filename="libsungorus.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Texel 1.08a17"				filename="libtexel.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Toga II 4.01"					filename="libtogaii.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
