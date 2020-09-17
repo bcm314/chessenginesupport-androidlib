@@ -16,15 +16,19 @@
     <engine name="Laser 1.8 beta"				filename="liblaser.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Nayeem 10.1"					filename="libnayeem.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="OpenTal 1.1"					filename="libopental.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+    <engine name="Rodent IV 0.32"				filename="libopental.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="RubiChess 1.8"				filename="librubichess.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Senpai 2.0"					filename="libsenpai.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Sting 11.2"					filename="libsting.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
-    <engine name="Stockfish 20200908"			filename="libstockfish.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
-    <engine name="Stockfish NNUE 20200908"		filename="libstockfishNNUE.so"	target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+    <engine name="Stockfish 20200917"			filename="libstockfish.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="SugaR XPrO 20200908"			filename="libsugar.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Sungorus 1.4"					filename="libsungorus.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Texel 1.08a17"				filename="libtexel.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Toga II 4.01"					filename="libtogaii.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+
+<!--
+    <engine name="Stockfish NNUE 20200908"		filename="libstockfishNNUE.so"	target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+-->
 
 <!-- ================================================================================
 		Other builds

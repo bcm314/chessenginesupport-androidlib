@@ -140,11 +140,12 @@ public class MainActivity extends Activity {
 		appendDetail(b, "Laser", "1.8 beta", "https://github.com/jeffreyan11/laser-chess-engine");
 		appendDetail(b, "Nayeem", "10.1", "https://github.com/MohamedNayeem/Nayeem");
 		appendDetail(b, "OpenTal", "1.1", "http://www.pkoziol.cal24.pl/opental");
+		appendDetail(b, "Rodent IV", "0.32", "https://github.com/nescitus/rodent-iv");
 		appendDetail(b, "RubiChess", "1.8", "https://github.com/Matthies/RubiChess");
 		appendDetail(b, "Senpai", "2.0", "https://github.com/MichaelB7/Senpai");
 		appendDetail(b, "Sting", "11.2", "http://www.talkchess.com/forum3/download/file.php?id=170");
-		appendDetail(b, "Stockfish", "20200908", "https://github.com/official-stockfish");
-		appendDetail(b, "Stockfish NNUE", "20200908", "https://github.com/joergoster/Stockfish-NNUE");
+		appendDetail(b, "Stockfish", "20200917", "https://github.com/official-stockfish");
+		// appendDetail(b, "Stockfish NNUE", "20200908", "https://github.com/joergoster/Stockfish-NNUE");
 		appendDetail(b, "SugaR XPrO", "20200908", "https://github.com/MichaelB7/SugaR");
 		appendDetail(b, "Sungorus", "1.4", "https://sites.google.com/site/sungorus");
 		appendDetail(b, "Texel", "1.08a17", "https://github.com/peterosterlund2/texel");
