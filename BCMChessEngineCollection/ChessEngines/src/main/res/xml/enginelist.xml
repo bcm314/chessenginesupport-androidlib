@@ -16,7 +16,7 @@
     <engine name="Laser 1.8 beta"				filename="liblaser.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Nayeem 10.1"					filename="libnayeem.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="OpenTal 1.1"					filename="libopental.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
-    <engine name="Rodent IV 0.32"				filename="libopental.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
+    <engine name="Rodent IV 0.32"				filename="librodent4.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="RubiChess 1.8"				filename="librubichess.so"		target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Senpai 2.0"					filename="libsenpai.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
     <engine name="Sting 11.2"					filename="libsting.so"			target="armeabi-v7a|arm64-v8a|x86|x86_64" />
