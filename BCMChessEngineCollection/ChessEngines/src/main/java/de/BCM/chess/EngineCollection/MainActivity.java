@@ -144,7 +144,7 @@ public class MainActivity extends Activity {
 		appendDetail(b, "RubiChess", "1.8", "https://github.com/Matthies/RubiChess");
 		appendDetail(b, "Senpai", "2.0", "https://github.com/MichaelB7/Senpai");
 		appendDetail(b, "Sting", "11.2", "http://www.talkchess.com/forum3/download/file.php?id=170");
-		appendDetail(b, "Stockfish", "20200917", "https://github.com/official-stockfish");
+		appendDetail(b, "Stockfish", "20200925", "https://github.com/official-stockfish");
 		// appendDetail(b, "Stockfish NNUE", "20200908", "https://github.com/joergoster/Stockfish-NNUE");
 		appendDetail(b, "SugaR XPrO", "20200908", "https://github.com/MichaelB7/SugaR");
 		appendDetail(b, "Sungorus", "1.4", "https://sites.google.com/site/sungorus");
@@ -154,6 +154,7 @@ public class MainActivity extends Activity {
 		b.append("\nAdditional engines built by others:\n");
 		b.append("You have to include it yourself, because I didn't checked redistribution permissions!\n\n");
 		appendDetail(b, "DanaSah", "7.9", "https://github.com/pmcastro/danasah790");
+		appendDetail(b, "Leela Chess Zero", "0.26.3", "https://github.com/LeelaChessZero/lc0");
 		appendDetail(b, "Aristides", "20171222", "https://play.google.com/store/apps/details?id=app.packs.chessenginesotherfish64pack");
 		appendDetail(b, "BrainFish", "20180423", "https://play.google.com/store/apps/details?id=app.packs.chessenginesotherfish64pack");
 		appendDetail(b, "Cfish", "20180418", "https://play.google.com/store/apps/details?id=app.packs.chessenginesotherfish64pack");
